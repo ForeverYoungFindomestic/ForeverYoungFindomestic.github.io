@@ -110,7 +110,7 @@ background-color:#00a24d;
 
     font-family: "sky-text-regular";
 
-    src: url(font/sky-text-regular.ttf) format("truetype");
+    src: url(../font/sky-text-regular.ttf) format("truetype");
 
 }
 
@@ -125,7 +125,7 @@ background-color:#00a24d;
 
     font-family: "GeosansLight";
 
-    src: url(font/GeosansLight.ttf) format("truetype");
+    src: url(../font/GeosansLight.ttf) format("truetype");
 
 }
 
@@ -139,7 +139,7 @@ background-color:#00a24d;
 
     font-family: "LEIXO";
 
-    src: url(font/LEIXO.ttf) format("truetype");
+    src: url(../font/LEIXO.ttf) format("truetype");
 
 }
 
