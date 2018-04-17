@@ -1,0 +1,73 @@
+[class^=dls-card] {
+    position: relative;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+}
+[class^=dls-card].dls-card-tilt {
+	height: 200px;
+    visibility: hidden;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-left, [class^=dls-card].dls-card-tilt .dls-card-tilt-right {
+	height: 200px;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    visibility: visible;
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-left {
+    left: 0;
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-left:hover+.dls-card-tilt-right+.dls-card-tilt-container {
+    -webkit-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-left:hover+.dls-card-tilt-right+.dls-card-tilt-container:before {
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-right {
+    right: 0;
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-right:hover+.dls-card-tilt-container {
+    -webkit-transform: rotateY(30deg);
+    transform: rotateY(30deg);
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-right:hover+.dls-card-tilt-container:before {
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-container {
+	height: 200px;
+    position: relative;
+    box-sizing: content-box;
+    background-size: 85%;
+    background-image: inherit;
+	background-position: center;
+    visibility: visible;
+    -webkit-transition: -webkit-transform .8s ease-out;
+    transition: -webkit-transform .8s ease-out;
+    transition: transform .8s ease-out;
+    transition: transform .8s ease-out, -webkit-transform .8s ease-out;
+}
+[class^=dls-card].dls-card-tilt .dls-card-tilt-container:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 60%;
+    background: -webkit-linear-gradient(left, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .25) 45%, hsla(0, 0%, 100%, .25) 55%, hsla(0, 0%, 100%, 0));
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .25) 45%, hsla(0, 0%, 100%, .25) 55%, hsla(0, 0%, 100%, 0));
+    -webkit-transition: -webkit-transform .8s ease-out;
+    transition: -webkit-transform .8s ease-out;
+    transition: transform .8s ease-out;
+    transition: transform .8s ease-out, -webkit-transform .8s ease-out;
+}
